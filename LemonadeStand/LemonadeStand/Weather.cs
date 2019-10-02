@@ -14,8 +14,9 @@ namespace LemonadeStand
         private List <string> weatherConditions;
         public string forecast;
         public string predictedForecast;
-        public string weekForeCast;
-        public string weekTemperatures;
+        public List <int> weekForeCast;
+        public List <int> weekTemperatures;
+    
         static Random rng = new Random(DateTime.Now.Millisecond);
         public Weather()
         {
@@ -81,4 +82,4 @@ namespace LemonadeStand
 
     //methods
 }
-}
+
