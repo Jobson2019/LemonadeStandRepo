@@ -19,6 +19,7 @@ namespace LemonadeStand
             UserInterface.DisplayRules();
             UserInterface.DisplayInventory();
             UserInterface.DisplayWeather();
+
         }
 
         //member methods
