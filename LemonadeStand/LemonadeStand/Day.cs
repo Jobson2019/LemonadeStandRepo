@@ -8,5 +8,10 @@ namespace LemonadeStand
 {
     class Day
     {
+        //variables
+
+        //constructor
+
+        //methods
     }
 }

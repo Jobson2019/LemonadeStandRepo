@@ -8,5 +8,10 @@ namespace LemonadeStand
 {
     class SugarCube
     {
+        public SugarCube()
+        {
+
+        }
+
     }
 }

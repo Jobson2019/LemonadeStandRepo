@@ -8,6 +8,15 @@ namespace LemonadeStand
 {
     class Weather
     {
+        //variables
+        public string condition;
+        public int temperature;
+        private List <string> weatherConditions;
+        public string forecast
 
+
+        //constructor
+
+        //methods
     }
 }

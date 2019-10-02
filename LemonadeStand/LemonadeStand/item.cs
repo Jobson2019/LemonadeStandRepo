@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class item
+    abstract class item
     {
+
+        //variables
+        public string name
+        //constructor
+
+        //methods
     }
 }
