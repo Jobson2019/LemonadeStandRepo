@@ -9,7 +9,8 @@ namespace LemonadeStand
     class Pitcher
     {
         //variables
-        public int cupsLeftInPitcher
+        public int cupsLeftInPitcher;
+
        
         //constructor
 

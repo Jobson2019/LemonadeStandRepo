@@ -14,12 +14,22 @@ namespace LemonadeStand
         public Wallet wallet;
         public Recipe recipe;
         public Pitcher pitcher;
-        public double bizProfits
+        public double bizProfits;
 
 
         //constructor
+        public player()
+        {
+            wallet = new Wallet();
+            inventory = new Inventory();
+            recipe = new Recipe();
+            pitcher = new Pitcher();
 
+
+        }
 
         //member methods
+
+
     }
 }

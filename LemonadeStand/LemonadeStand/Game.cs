@@ -9,7 +9,9 @@ namespace LemonadeStand
     class Game
     {
         // member variables
-
+        player player;
+        List<Day> days;
+        int currentDay;
 
 
         // constructor
@@ -17,8 +19,8 @@ namespace LemonadeStand
         public void RunGame()
         {
             UserInterface.DisplayRules();
-            UserInterface.DisplayInventory();
-            UserInterface.DisplayWeather();
+          
+           
 
         }
 

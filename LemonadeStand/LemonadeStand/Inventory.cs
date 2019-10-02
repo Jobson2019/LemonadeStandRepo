@@ -24,5 +24,14 @@ namespace LemonadeStand
             sugarCubes = new List<SugarCube>();
         }
         //methods
+        public void DisplayInventory()
+        {
+            Console.WriteLine("You have " + lemons.Count + " Lemons");
+            Console.WriteLine("You have " + iceCubes.Count + " Ice Cubes");
+            Console.WriteLine("You have " + cups.Count + " Cups");
+            Console.WriteLine("You have " + sugarCubes + " Sugar Cubes");
+
+
+        }
     }
 }
