@@ -21,7 +21,7 @@ namespace LemonadeStand
             amountLemons = 8;
             amountSugarCubes = 4;
             amountIceCubes = 5;
-            priceCup = 1.00;
+            priceCup = 0.50;
         }
         //methods
 

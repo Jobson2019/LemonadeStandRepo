@@ -9,7 +9,7 @@ namespace LemonadeStand
     class Store
     {
         //member variable
-        player player;
+        public player;
         
         //constructor
 

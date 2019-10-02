@@ -40,7 +40,7 @@ namespace LemonadeStand
 
         }
 
-        public static void DisplayRecipe(int numberSugarCubes int numberLemons int IceCubes)
+        public static void DisplayRecipe(int numberSugarCubes, int numberLemons, int IceCubes)
         {
 
         }

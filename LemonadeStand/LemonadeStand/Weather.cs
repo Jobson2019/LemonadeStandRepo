@@ -20,7 +20,7 @@ namespace LemonadeStand
         static Random rng = new Random(DateTime.Now.Millisecond);
         public Weather()
         {
-            weatherConditions = new List<string>() { "Partly shitty", "Mostly shitty", "Increasingly shitty", "Shitty", "Overcast with shitty", "Shitty Thunderstorms", "Raining Shitty Cats and Dogs" };
+            weatherConditions = new List<string>() { "Terrible", "Pretty Bad", "Awful", "Stay Inside", "Overcast", "THUNDAH, AAAAAAAAAAAAAAAAAAAAAAAAAAAAH", "Monsoon" };
             weekForeCast = new List<int>();
             weekTemperatures = new List<int>();
         }
