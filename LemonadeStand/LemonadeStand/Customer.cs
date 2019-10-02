@@ -8,6 +8,8 @@ namespace LemonadeStand
 {
     class Customer
     {
-
+        // create demand method
+        // create multiplier based on cost, weather and temp
+       
     }
 }

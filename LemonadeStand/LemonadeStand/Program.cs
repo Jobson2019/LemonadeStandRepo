@@ -13,6 +13,9 @@ namespace LemonadeStand
             Game game = new Game();
             game.RunGame();
             Console.ReadLine();
+            UserInterface.DisplayRules();
+            Weather.DisplayWeather();
+
         }
     }
 }

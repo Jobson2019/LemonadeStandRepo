@@ -45,24 +45,25 @@ namespace LemonadeStand
         {
             for (int i = 0; i < 7; i++)
             {
-                int weatherValue = rng.Next(1, 100);
-                if (weatherValue < 20)
+                int weatherValue = rng.Next(1, 10); // scale down
+
+                if (weatherValue <= 1)
                 {
                     weekForeCast.Add(1);
                 }
-                if (weatherValue < 40 && weatherValue > 19)
+                if (weatherValue <= 3 && weatherValue > 2)
                 {
                     weekForeCast.Add(2);
                 }
-                if (weatherValue < 60 && weatherValue > 39)
+                if (weatherValue <= 4 && weatherValue > 3)
                 {
                     weekForeCast.Add(3);
                 }
-                if (weatherValue < 80 && weatherValue > 59)
+                if (weatherValue <= 5  && weatherValue > 4)
                 {
                     weekForeCast.Add(4);
                 }
-                if (weatherValue < 95 && weatherValue > 79)
+                if (weatherValue < 8 && weatherValue > )
                 {
                     weekForeCast.Add(5);
                 }

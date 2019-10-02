@@ -9,7 +9,7 @@ namespace LemonadeStand
     static class UserInterface
     {
         // all methods public static void
-
+        public 
 
         // member variables
 
@@ -30,19 +30,21 @@ namespace LemonadeStand
         public static void DisplayInventory(Inventory inventory)
         {
             Console.WriteLine("Filler Display Inventory");
-
+            Console.ReadLine();
 
         }
 
         public static void DisplayWeather(Weather weather)
         {
             Console.WriteLine("Filler Display Weather");
-
+            Console.ReadLine();
         }
 
-        public static void DisplayRecipe(int numberSugarCubes, int numberLemons, int IceCubes)
+        public static void DisplayRecipe(int numberSugarCubes, int numberLemons, int numberIceCubes)
         {
-
+            Console.WriteLine("Sugar Cubes " + numberSugarCubes);
+            Console.WriteLine("Lemons " + numberLemons);
+            Console.WriteLine("Ice Cubes " + numberIceCubes);
         }
 
 
