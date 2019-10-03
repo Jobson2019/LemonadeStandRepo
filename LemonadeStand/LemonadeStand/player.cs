@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class player
+    class Player
     {
         //member variables
         public string name;
@@ -18,13 +18,12 @@ namespace LemonadeStand
 
 
         //constructor
-        public player()
+        public Player()
         {
             wallet = new Wallet();
             inventory = new Inventory();
             recipe = new Recipe();
             pitcher = new Pitcher();
-
 
         }
 

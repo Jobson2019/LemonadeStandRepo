@@ -10,7 +10,7 @@ namespace LemonadeStand
     {
 
         //variables
-        public string name;
+        
         //constructor
         public item()
         {

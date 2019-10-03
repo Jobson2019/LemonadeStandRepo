@@ -23,14 +23,17 @@ namespace LemonadeStand
             amountIceCubes = 5;
             priceCup = 0.50;
         }
+
+
         //methods
 
-        public void ChooseRecipe(Inventory inventory, Weather weather)
-        {
-            UserInterface.DisplayInventory(inventory);
-            UserInterface.DisplayWeather(weather);
+        //public void ChooseRecipe(Inventory inventory, Weather weather)
+       // {
+        //    UserInterface.DisplayInventory(inventory);
+          //  UserInterface.DisplayWeather(weather);
 
-        }
+       // }
 
+        //work on being able to augment recipe
     }
 }

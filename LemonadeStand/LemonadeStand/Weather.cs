@@ -17,10 +17,11 @@ namespace LemonadeStand
         public List <int> weekForeCast;
         public List <int> weekTemperatures;
     
-        static Random rng = new Random(DateTime.Now.Millisecond);
+        static Random random
+            = new Random(DateTime.Now.Millisecond);
         public Weather()
         {
-            weatherConditions = new List<string>() { "Terrible", "Pretty Bad", "Awful", "Stay Inside", "Overcast", "THUNDAH, AAAAAAAAAAAAAAAAAAAAAAAAAAAAH", "Monsoon" };
+            weatherConditions = new List<string>() {"Terrible", "Pretty Bad", "Awful", "Weak", "Overcast", "Ok", "Nice" };
             weekForeCast = new List<int>();
             weekTemperatures = new List<int>();
         }
@@ -37,7 +38,7 @@ namespace LemonadeStand
         {
             for (int i = 0; i < 7; i++)
             {
-                int temp = rng.Next(40, 100);
+                int temp = random.Next(40, 100);
                 weekTemperatures.Add(temp);
             }
         }
@@ -45,7 +46,7 @@ namespace LemonadeStand
         {
             for (int i = 0; i < 7; i++)
             {
-                int weatherValue = rng.Next(1, 100); // scale down
+                int weatherValue = random.Next(1, 100); // scale down
 
                 if (weatherValue < 20)
                 {

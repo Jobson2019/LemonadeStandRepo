@@ -41,15 +41,15 @@ namespace LemonadeStand
         
         
         // create demand method
-        public bool BuyChance(int weather, int temp)
+        public bool BuyChance(Weather weather)
         {
         // weather switch all except 0 to else if statments
 
-            if (weather == 0)
+            if (weather.temperature == 0)
             { 
                 weatherMultiplier = 0.4;
             }
-            else if (weather == 1)
+            else if (weather.forecast == 1)
             {
                 weatherMultiplier = 0.6;
             }

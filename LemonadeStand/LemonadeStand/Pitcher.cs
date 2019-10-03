@@ -15,9 +15,31 @@ namespace LemonadeStand
         //constructor
         public Pitcher()
         {
-
+            cupsLeftInPitcher = 0;
         }
 
         //methods
+
+        
+
+        public void SellCups(int cupsSold)
+        {
+            cupsLeftInPitcher = cupsLeftInPitcher - cupsSold; 
+        }
+        public void RefillPitcher()
+        {
+            cupsLeftInPitcher = 16;
+        }
+        public int CupsLeft()
+        {
+            return cupsLeftInPitcher;
+        }
+        public void EmptyPitcher()
+        {
+            
+        }
     }
+
+
+        
 }

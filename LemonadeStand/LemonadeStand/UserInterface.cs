@@ -48,6 +48,11 @@ namespace LemonadeStand
             Console.WriteLine("Ice Cubes " + numberIceCubes);
         }
 
+        public static void DisplayWeekDay(string dayName)
+        {
+            
+            Console.WriteLine("Today is " + dayName);
+        }
 
 
 

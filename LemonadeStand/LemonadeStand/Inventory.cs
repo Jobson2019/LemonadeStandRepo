@@ -31,7 +31,6 @@ namespace LemonadeStand
             Console.WriteLine("You have " + cups.Count + " Cups");
             Console.WriteLine("You have " + sugarCubes + " Sugar Cubes");
 
-
         }
     }
 }
