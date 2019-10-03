@@ -45,11 +45,11 @@ namespace LemonadeStand
         {
         // weather switch all except 0 to else if statments
 
-            if (weather.temperature == 0)
+            if (weather == 0)
             { 
                 weatherMultiplier = 0.4;
             }
-            else if (weather.forecast == 1)
+            else if (weather == 1)
             {
                 weatherMultiplier = 0.6;
             }

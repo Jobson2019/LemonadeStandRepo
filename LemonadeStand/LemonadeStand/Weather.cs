@@ -22,7 +22,7 @@ namespace LemonadeStand
         public Weather()
         {
             weatherConditions = new List<string>() {"Terrible", "Pretty Bad", "Awful", "Weak", "Overcast", "Ok", "Nice" };
-            weekForeCast = new List<int>();
+            //weekForeCast = new List<int>();
             weekTemperatures = new List<int>();
         }
         // methods
@@ -48,33 +48,37 @@ namespace LemonadeStand
             {
                 int weatherValue = random.Next(1, 100); // scale down
 
-                if (weatherValue < 20)
+                if (weatherValue < 18)
                 {
-                    weekForeCast.Add(1);
+                    condition = weatherConditions[0];
                 }
-                if (weatherValue < 40 && weatherValue > 19)
+                else if (weatherValue < 40 && weatherValue > 19)
                 {
-                    weekForeCast.Add(2);
+                    condition = weatherConditions[1];
                 }
-                if (weatherValue < 60 && weatherValue > 39)
+                else if (weatherValue < 60 && weatherValue > 39)
                 {
-                    weekForeCast.Add(3);
+                    condition = weatherConditions[2];
                 }
-                if (weatherValue < 80  && weatherValue > 59)
+                else if (weatherValue < 80  && weatherValue > 59)
                 {
-                    weekForeCast.Add(4);
+                    condition = weatherConditions[3];
                 }
-                if (weatherValue < 95 && weatherValue > 79)
+                else if (weatherValue < 95 && weatherValue > 79)
                 {
-                    weekForeCast.Add(5);
+                    condition = weatherConditions[4];
                 }
-                if (weatherValue < 98 && weatherValue > 94)
+                else if (weatherValue < 98 && weatherValue > 94)
                 {
-                    weekForeCast.Add(6);
+                    condition = weatherConditions[5];
                 }
-                if (weatherValue < 100 && weatherValue > 97)
+                else if (weatherValue < 99 && weatherValue > 97)
                 {
-                    weekForeCast.Add(7);
+                    condition = weatherConditions[6];
+                }
+                else if (weatherValue > 99)
+                {
+                    condition = weatherConditions[7];
                 }
             }
         }
