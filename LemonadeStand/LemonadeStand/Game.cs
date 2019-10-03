@@ -22,6 +22,7 @@ namespace LemonadeStand
             {
                 "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
             };
+            days = new List<Day>();
         }
 
         public void RunGame()

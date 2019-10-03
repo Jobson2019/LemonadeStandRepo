@@ -24,6 +24,8 @@ namespace LemonadeStand
             weatherConditions = new List<string>() {"Terrible", "Pretty Bad", "Awful", "Weak", "Overcast", "Ok", "Nice" };
             //weekForeCast = new List<int>();
             weekTemperatures = new List<int>();
+            CreateTemperature();
+            CreateWeather();
         }
         // methods
         public string DailyForecast(int currentDay)
@@ -36,11 +38,11 @@ namespace LemonadeStand
         }
         public void CreateTemperature()
         {
-            for (int i = 0; i < 7; i++)
-            {
-                int temp = random.Next(40, 100);
-                weekTemperatures.Add(temp);
-            }
+           
+            
+               temperature = random.Next(40, 100);
+                
+            
         }
         public void CreateWeather()
         {

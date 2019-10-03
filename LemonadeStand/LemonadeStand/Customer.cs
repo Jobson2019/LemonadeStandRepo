@@ -35,21 +35,23 @@ namespace LemonadeStand
             name = customerNames[genName];
         }
 
-        
-        
-        
-        
-        
+
+
+
+
+
         // create demand method
         public bool BuyChance(Weather weather)
         {
+         
+        
         // weather switch all except 0 to else if statments
 
-            if (weather == 0)
+            if (weather.condition == "Terrible")
             { 
                 weatherMultiplier = 0.4;
             }
-            else if (weather == 1)
+            else if (weather.condition == "Pretty Bad")
             {
                 weatherMultiplier = 0.6;
             }
@@ -114,9 +116,9 @@ namespace LemonadeStand
             }
 
             int chanceToBuy = random.Next(1, 100);
-            double buyMod = (tempMultiplier * weatherMultiplier * chanceToBuy);
+double buyMod = (tempMultiplier * weatherMultiplier * chanceToBuy);
             if (buyMod >= 50)
-            
+
             {
                 return true; 
 
@@ -131,7 +133,7 @@ namespace LemonadeStand
 
         }
 
-        
+
 
 
 
@@ -139,6 +141,6 @@ namespace LemonadeStand
 
 
 
-       
+
     }
 }
