@@ -9,7 +9,7 @@ namespace LemonadeStand
     static class UserInterface
     {
         // all methods public static void
-        public UserInterface
+        
         
 
         // member variables
