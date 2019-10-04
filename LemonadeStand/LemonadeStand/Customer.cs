@@ -55,11 +55,11 @@ namespace LemonadeStand
             {
                 weatherMultiplier = 0.6;
             }
-            else if (weather == 2)
+            else if (weather.condition == "")
             {
                 weatherMultiplier = 0.8;
             }
-            else if (weather == 3)
+            else if (weather.condition == 3)
             {
                 weatherMultiplier = 1.0;
             }
@@ -82,41 +82,41 @@ namespace LemonadeStand
 
 
 
-            if (temp == 0)
+            if (weather.temperature >= 40 && weather.temperature < 50 )
             {
                 tempMultiplier = 0.4;
             }
-            else if (temp == 1)
+            else if (weather.temperature >= 51 && weather.temperature <  60)
             {
                 tempMultiplier = 0.6;
             }
-            else if (temp == 2)
+            else if (weather.temperature >= 61 && weather.temperature < 70)
             {
                 tempMultiplier = 0.8;
             }
-            else if (temp == 3)
+            else if (weather.temperature >= 71 && weather.temperature < 80)
             {
                 tempMultiplier = 1.0;
             }
-            else if (temp == 4)
+            else if (weather.temperature >= 81 && weather.temperature < 90)
             {
                 tempMultiplier = 1.1;
             }
-            else if (temp == 5)
+            else if (weather.temperature >=91 && weather.temperature < 93)
             {
                 tempMultiplier = 1.2;
             }
-            else if (temp == 6)
+            else if (weather.temperature >= 94 && weather.temperature < 96)
             {
                 tempMultiplier = 1.3;
             }
-            else if (temp == 7)
+            else if (weather.temperature >= 97 && weather.temperature < 98)
             {
                 tempMultiplier = 1.4;
             }
 
             int chanceToBuy = random.Next(1, 100);
-double buyMod = (tempMultiplier * weatherMultiplier * chanceToBuy);
+            double buyMod = (tempMultiplier * weatherMultiplier * chanceToBuy);
             if (buyMod >= 50)
 
             {
