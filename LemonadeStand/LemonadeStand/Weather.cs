@@ -21,7 +21,7 @@ namespace LemonadeStand
             = new Random(DateTime.Now.Millisecond);
         public Weather()
         {
-            weatherConditions = new List<string>() {"Terrible", "Pretty Bad", "Awful", "Weak", "Overcast", "Ok", "Nice" };
+            weatherConditions = new List<string>() {"Terrible", "Pretty Bad", "Awful", "Weak", "Overcast", "Ok", "Nice", "Beautiful" };
             //weekForeCast = new List<int>();
             weekTemperatures = new List<int>();
             CreateTemperature();

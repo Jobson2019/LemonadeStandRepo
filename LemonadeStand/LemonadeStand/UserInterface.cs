@@ -30,14 +30,27 @@ namespace LemonadeStand
 
         public static void DisplayInventory(Inventory inventory)
         {
-            Console.WriteLine("Filler Display Inventory");
+            Console.WriteLine("You have " + inventory.lemons.Count + " Lemons");
+            Console.WriteLine("You have " + inventory.iceCubes.Count + " Ice Cubes");
+            Console.WriteLine("You have " + inventory.cups.Count + " Cups");
+            Console.WriteLine("You have " + inventory.sugarCubes + " Sugar Cubes");
+
             Console.ReadLine();
 
         }
+        //public string DailyForecast(int currentDay)
+        //{
+        //    return weatherConditions[weekForeCast[currentDay]];
+        //}
+        //public int DailyTemperature(int currentDay)
+        //{
+        //    return weekTemperatures[currentDay];
+        //}
 
         public static void DisplayWeather(Weather weather)
         {
-            Console.WriteLine("Filler Display Weather");
+            Console.WriteLine("The Weather is " + weather.condition);
+            Console.WriteLine("The Temperature is " + weather.temperature);
             Console.ReadLine();
         }
 
@@ -48,10 +61,10 @@ namespace LemonadeStand
             Console.WriteLine("Ice Cubes " + numberIceCubes);
         }
 
-        public static void DisplayWeekDay(string dayName)
+        public static void DisplayWeekDay(Game game)
         {
             
-            Console.WriteLine("Today is " + dayName);
+            Console.WriteLine("Today is " + game.dayNames);
         }
 
 

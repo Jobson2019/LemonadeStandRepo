@@ -21,7 +21,9 @@ namespace LemonadeStand
         {
             customerNames = new List<string>()
             {
-            "Randy", "Big Dirty Dave", "Jack", "Beta-Male Eric", "Marky Mark", "Ice T", "Racist Dan", "Tom Sellick's Moustache", "Nazi Jake", "Pedo stache Jake", "Jake Three"
+            "Randy", "Big Dirty Dave", "Jack", "Beta-Male Eric", "Marky Mark", "Ice T", "Racist Dan", "Tom Sellick's Moustache", "Nazi Jake", "Pedo-stache Jake", "Jake Three", 
+            "Amish Gabe", "Alex 'The ToothPick' Hardy", "Dippin Danny", "T-Dawg", "Adam 'The Defector' Newman", "Annie QuietSides", "Fish-Eye Larry", "Dave 'SpeakEasy' Willy", "Big Nate",
+            "Chief Runs With Pony-Tail", "Randy?", "Caucasian Buddha", "White Boy Steve", ""  
             };
         }
 
@@ -43,9 +45,9 @@ namespace LemonadeStand
         // create demand method
         public bool BuyChance(Weather weather)
         {
-         
-        
-        // weather switch all except 0 to else if statments
+
+            //"Terrible", "Pretty Bad", "Awful", "Weak", "Overcast", "Ok", "Nice"
+            // weather switch all except 0 to else if statments
 
             if (weather.condition == "Terrible")
             { 
@@ -55,27 +57,27 @@ namespace LemonadeStand
             {
                 weatherMultiplier = 0.6;
             }
-            else if (weather.condition == "")
+            else if (weather.condition == "Awful")
             {
                 weatherMultiplier = 0.8;
             }
-            else if (weather.condition == 3)
+            else if (weather.condition == "Weak")
             {
                 weatherMultiplier = 1.0;
             }
-            else if (weather == 4)
+            else if (weather.condition == "Overcast")
             {
                 weatherMultiplier = 1.1;
             }
-            else if (weather == 5)
+            else if (weather.condition == "Ok")
             {
                 weatherMultiplier = 1.2;
             }
-            else if (weather == 6)
+            else if (weather.condition == "Nice")
             {
                 weatherMultiplier = 1.3;
             }
-            else if (weather == 7)
+            else if (weather.condition == "Beautiful")
             {
                 weatherMultiplier = 1.4;
             }
