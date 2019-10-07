@@ -30,16 +30,18 @@ namespace LemonadeStand
         { 
            UserInterface.DisplayRules();
            UserInterface.DisplayInventory(player.inventory);
-            Console.WriteLine("enter inputs");
+            Console.WriteLine("Purchase Ingredients", "Show Rules", "Start Game?", "Start Over");
             string choice = Console.ReadLine();
             switch (choice)
             {
-                case "purchase Ingredients":
+                case "Purchase Ingredients":
                     Purchasing(money);
                     break;
                 case "Show Rules":
                     break;
                 case "Start Game?":
+                    break;
+                    default "Start Over":
                     break;
             }
 

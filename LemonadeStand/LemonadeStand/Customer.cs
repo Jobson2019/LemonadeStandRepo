@@ -23,7 +23,7 @@ namespace LemonadeStand
             {
             "Randy", "Big Dirty Dave", "Jack", "Beta-Male Eric", "Marky Mark", "Ice T", "Racist Dan", "Tom Sellick's Moustache", "Nazi Jake", "Pedo-stache Jake", "Jake Three", 
             "Amish Gabe", "Alex 'The ToothPick' Hardy", "Dippin Danny", "T-Dawg", "Adam 'The Defector' Newman", "Annie QuietSides", "Fish-Eye Larry", "Dave 'SpeakEasy' Willy", "Big Nate",
-            "Chief Runs With Pony-Tail", "Randy?", "Caucasian Buddha", "White Boy Steve", ""  
+            "Chief Runs With Pony-Tail", "Randy?", "Caucasian Buddha", "White Boy Steve", "Hispanic Buddha"  
             };
         }
 
